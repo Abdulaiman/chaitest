@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 require("dotenv").config();
 const chai = require("chai");
-const { server } = require("../app");
+const { server } = require("../app.js");
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -63,13 +63,13 @@ chai.should();
       });
       it("should not create a person record without an age", async function () {
         // your code goes here.  Hint: to clear the age field, you need the line
-        // await page.$eval("#age", (el) => (el.value = "")); 
+        // await page.$eval("#age", (el) => (el.value = ""));
       });
       it("should return the entries just created", async function () {
-         // your code goes here
+        // your code goes here
       });
       it("should return the last entry.", async function () {
-         // your code goes here
+        // your code goes here
       });
     });
   });
